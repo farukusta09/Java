@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Mavenproject4 {
+
+   
+    public static void main(String[] args) {
+    
+     Scanner scan = new Scanner(System.in);
+     
+     System.out.println("Birinci sayiyi giriniz...");
+        int a = scan.nextInt();
+     
+     System.out.println("ikinci sayiyi giriniz...");
+        int b = scan.nextInt();
+     
+     double hipotenus = Math.sqrt((a*a)+(b*b));
+     
+     System.out.println("hipotenus: "+hipotenus);
+    
+    }
+
+
+}
