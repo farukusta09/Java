@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class YakitTutari {
+
+    public static void main(String[] args){
+    
+    Scanner scan = new Scanner(System.in);
+        
+    System.out.println("Aracınız 100 km'de kaç litre yakıt tüketiyor? (Örnek: 4,45)");
+        double litre = scan.nextDouble();
+    
+    System.out.println("Bir litre benzin kaç tl ?(Örnek: 27,82)");
+        double benzin = scan.nextDouble();
+        
+    double KmdeBenzinFiyati = (litre/100)*benzin;
+    
+    System.out.println("Aracı kaç km kullandınız? (Örnek = 4,32)");
+        double KullanılanKm = scan.nextDouble();
+    
+    double ToplamTutar = KmdeBenzinFiyati*KullanılanKm;
+    
+    System.out.println("Ödemeniz gereken tutar "+ ToplamTutar + " tl" );
+    
+    }
+    
+}
