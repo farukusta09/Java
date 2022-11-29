@@ -1,0 +1,83 @@
+
+
+package com.mycompany.mavenproject2;
+
+import java.util.Scanner;
+
+public class Mavenproject2 {
+    
+    
+    public static void max(int a,int b, int c){
+    int max=0;
+    
+    if(a>=b && a>=c){
+    
+    max=a;
+    }
+    
+    else if(b>=a && b>=c){
+    
+    max=b;
+    
+    
+    }
+    
+    else if(c>=a && c>=b){
+    
+    max=c;
+    
+    }
+    
+    System.out.println("en büyük sayı = "+max);
+    
+    }
+    
+    public static void min(int a,int b, int c){
+    int min=0;
+    
+    if(a<=b && a<=c){
+    
+    min=a;
+    }
+    
+    else if(b<=a && b<=c){
+    
+    min=b;
+    
+    
+    }
+    
+    else if(c<=a && c<=b){
+    
+    min=c;
+    
+    }
+    
+    System.out.println("en küçük sayı = "+min);
+    
+    }
+    
+    
+    
+
+public static void main(String[] args){
+
+Scanner scan = new Scanner(System.in);
+    
+    System.out.println("lütfen birinci sayıyı giriniz...");
+    int a = scan.nextInt();
+    
+    System.out.println("lütfen ikinci sayıyı giriniz...");
+    int b = scan.nextInt();
+    
+    System.out.println("lütfen üçüncü sayıyı giriniz...");
+    int c = scan.nextInt();
+
+    max(a,b,c);
+    min(a,b,c);
+
+
+}
+    
+ }
+
