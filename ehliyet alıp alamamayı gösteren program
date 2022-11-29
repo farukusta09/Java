@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Mavenproject2 {
+
+public static void main(String[] args){
+
+Scanner scan = new Scanner(System.in);
+   
+   System.out.println("lütfen yaşınızı giriniz...");
+   
+   int yas = scan.nextInt();
+   
+        if(yas >= 18 && yas <= 65){
+            
+             System.out.println("ehliyet alabilirsiniz...");
+     }
+        else if(yas < 18){
+
+             System.out.println("ehliyet alabilmek için en az 18 yaşında olmalısınız...");
+
+     }
+        else if(yas > 65) {
+        
+             System.out.println("ehliyet alabilmek için 65 yaşından küçük olmalısınız...");
+        
+     }         
+   }
+ }
+
