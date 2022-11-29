@@ -1,0 +1,93 @@
+
+
+
+import java.util.Scanner;
+
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+      System.out.println("*********************");
+      String islemler = "1.toplama işlemi\n"
+                         +"2.çıkarma işlermi\n"
+                         +"3.çarpma işlemi\n"
+                         +"4.bölme işlemi\n"
+                         +"5.kalan işlemi\n";
+      System.out.println(islemler);
+      System.out.println("*********************");
+      System.out.println("işlem seçiniz...");
+      int islem = scanner.nextInt();
+      int a;
+      int b;
+      int c;
+      double d;
+    
+      
+      switch(islem){
+        case 1:
+    System.out.println("birinci sayıyı giriniz...");
+    a = scanner.nextInt();
+    System.out.println("ikinci sayıyı giriniz...");
+    b = scanner.nextInt();
+    c= a+b;
+     System.out.println("toplam = "+c);
+    break;
+     
+        case 2:
+    System.out.println("birinci sayıyı giriniz...");
+    a = scanner.nextInt();
+    System.out.println("ikinci sayıyı giriniz...");
+    b = scanner.nextInt();
+    c= a-b;
+     System.out.println("fark = "+c);
+    break;
+     
+     case 3:
+    System.out.println("birinci sayıyı giriniz...");
+    a = scanner.nextInt();
+    System.out.println("ikinci sayıyı giriniz...");
+    b = scanner.nextInt();
+    c= a*b;
+     System.out.println("çarpım = "+c);
+    break;
+     
+     case 4:
+    System.out.println("birinci sayıyı giriniz...");
+    a = scanner.nextInt();
+    System.out.println("ikinci sayıyı giriniz...");
+    b = scanner.nextInt();
+    d= (double)a/b;
+     System.out.println("bölüm = "+d);
+    break;
+     
+     case 5:
+    System.out.println("birinci sayıyı giriniz...");
+    a = scanner.nextInt();
+    System.out.println("ikinci sayıyı giriniz...");
+    b = scanner.nextInt();
+    c= a%b;
+     System.out.println("kalan = "+c);
+    break;
+    
+     default : 
+          System.out.println("geçerli işlem giriniz...");
+
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+}
