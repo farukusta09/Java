@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+   
+        
+        System.out.println("lütfen armstrong sayısı olup olmadığını sorgulamak istediğiniz sayıyı giriniz...");
+        
+        int sayi = scan.nextInt();
+        int gecici_sayi=sayi;
+        int sayi2=sayi;
+        int basamak_sayisi =0;
+        int toplam = 0;
+        int basamakDegeri;
+        
+        while(sayi2>0){
+        
+            sayi2/=10;
+            basamak_sayisi++;
+        }   
+        
+        do{
+        basamakDegeri = gecici_sayi % 10;
+        gecici_sayi /= 10;
+        
+        
+        toplam+=Math.pow(basamakDegeri,basamak_sayisi);
+        
+        }while(gecici_sayi>0);
+       
+        
+        if(toplam==sayi){
+        System.out.println("bu sayı armstrong sayısıdır...");
+        }
+        else{
+        System.out.println("bu sayı armstrong sayısı değildir...");
+        
+        }
+    }
+}
