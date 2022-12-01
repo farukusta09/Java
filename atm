@@ -1,0 +1,172 @@
+import java.util.Scanner;
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+        
+            Scanner scan = new Scanner(System.in);
+
+            int bakiye = 1000;
+
+            String islemler = ("1. işlem = bakiye göster \n"
+                            +"2. işlem = para çekme \n"
+                            +"3. işlem = para yatırma");
+
+            String noktalar = "*******************************"; 
+            String kontrol,kontrol2,kontrol3;
+            while (true){ 
+
+            System.out.println(noktalar);
+            System.out.println(islemler);
+            System.out.println(noktalar);
+            System.out.println("Lütfen yapmak istediğiniz işlemi tuşlayınız...");
+          
+            int secim = scan.nextInt();
+            scan.nextLine();
+           
+
+
+            if(secim==1){
+
+                System.out.println("Mevcut bakiyeniz = "+bakiye);
+
+                System.out.println("Yapmak istediğiniz başka bir işlem var mı ? (y-n)");
+
+                kontrol = scan.nextLine();
+               
+                if(kontrol.equals("y")){
+                    continue;
+                    }
+
+                else if(kontrol.equals("n")){
+                        System.out.println("Sistemden çıkış yaptınız lütfen kartınızı almayı unutmayınız...");
+                    break;
+                    }
+                
+                else{
+                 System.out.println("Hatalı tuşlama yaptınız lütfen tekrardan girin...(y-n)");
+                    kontrol = scan.nextLine();
+                        if(kontrol.equals("y")){
+                        continue;
+                        }
+
+                    else if(kontrol.equals("n")){
+                            System.out.println("Sistemden çıkış yaptınız lütfen kartınızı almayı unutmayınız...");
+                        break;
+                        }
+
+                    else{
+                     System.out.println("Tekrar hatalı tuşlama yaptınız sistemden çıkış yapılıyor...");
+                    break;
+                    }
+                }
+            }
+
+            else if(secim==2){
+                   
+                    System.out.println("Çekmek istediğiniz tutarı tuşlayınız...");
+                    int tutar = scan.nextInt();
+                    
+                    if(bakiye<tutar){
+                    System.out.println("Bakiyeniz yetersizdir. Mevcut bakiyeniz = "+bakiye +"tl. En başa tekrar yönlendiriliyorsunuz...");
+                    continue;
+                    }
+                    else{
+                    
+                        bakiye -= tutar;
+                        System.out.println("yeni bakiyeniz = "+bakiye);
+                        System.out.println("yapmak istediğiniz başka bir işlem var mı ? (y-n)");
+                        
+                        
+                       scan.nextLine();
+                       kontrol2 = scan.nextLine();
+
+                        if(kontrol2.equals("y")){
+                           continue;
+                            
+                        }
+ 
+                        else if(kontrol2.equals("n")){
+                            System.out.println("Sistemden çıkış yaptınız lütfen kartınızı almayı unutmayınız...");
+                        break;
+                        }
+                        else{
+                        
+                        System.out.println("Hatalı giriş yaptınız tekrar tuşlayın...(y-n)");
+                       
+                        kontrol2= scan.nextLine();
+                        
+                        if(kontrol2.equals("y")){
+                           continue;
+                            
+                        }
+ 
+                        else if(kontrol2.equals("n")){
+                            System.out.println("Sistemden çıkış yaptınız lütfen kartınızı almayı unutmayınız...");
+                        break;
+                        
+                        
+                        
+                        }
+                        else {
+                            
+                           System.out.println("yine yanlış girdiniz sistemden çıkış yapılıyor...");
+                           break;
+                        }
+                        }
+                     
+                    }                    
+                }
+
+            else if(secim==3){
+
+
+                    System.out.println("Yatırmak istediğiniz tutarı tuşlayınız...");
+                    int tutar = scan.nextInt();
+                    bakiye += tutar;
+                    System.out.println("Yeni bakiyeniz = "+bakiye);
+                    System.out.println("Yapmak istediğiniz başka bir işlem var mı ? (y-n)");
+                    kontrol3 = scan.nextLine();
+                    scan.nextLine();
+                    
+                    if(kontrol3.equals("y")){
+                    continue;
+                    }
+
+                    else if(kontrol3.equals("n")){
+                        System.out.println("Sistemden çıkış yaptınız lütfen kartınızı almayı unutmayınız...");
+                    break;
+                    
+                    }
+                    else{
+                   
+                    System.out.println("Hatalı giriş yaptınız tekrar tuşlayın...(y-n)");
+                       
+                        kontrol3= scan.nextLine();
+                        
+                        if(kontrol3.equals("y")){
+                           continue;
+                            
+                        }
+ 
+                        else if(kontrol3.equals("n")){
+                            System.out.println("Sistemden çıkış yaptınız lütfen kartınızı almayı unutmayınız...");
+                        break;
+                        
+                        
+                        
+                        }
+                        else {
+                            
+                           System.out.println("yine yanlış girdiniz sistemden çıkış yapılıyor...");
+                           break;
+                        }
+                    
+                    }
+                }
+            else{
+            System.out.println("Lütfen 1 ile 3 arasında bir değer girin...");
+            }
+            }                                     
+        }
+    }
+
