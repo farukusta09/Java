@@ -1,5 +1,8 @@
 import java.util.Scanner;
-public class Mavenproject2 {
+public class Mavenproject4 {
+
+   
+
 
     public static void main(String[] args) {
         
@@ -125,8 +128,9 @@ public class Mavenproject2 {
                     bakiye += tutar;
                     System.out.println("Yeni bakiyeniz = "+bakiye);
                     System.out.println("Yapmak istediğiniz başka bir işlem var mı ? (y-n)");
+                     scan.nextLine();
                     kontrol3 = scan.nextLine();
-                    scan.nextLine();
+                   
                     
                     if(kontrol3.equals("y")){
                     continue;
@@ -169,4 +173,3 @@ public class Mavenproject2 {
             }                                     
         }
     }
-
