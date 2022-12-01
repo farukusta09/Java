@@ -80,7 +80,7 @@ public class Mavenproject4 {
                         System.out.println("yapmak istediğiniz başka bir işlem var mı ? (y-n)");
                         
                         
-                       scan.nextLine();
+                       scan.nextLine();//bunu neden yaptık?
                        kontrol2 = scan.nextLine();
 
                         if(kontrol2.equals("y")){
@@ -128,7 +128,7 @@ public class Mavenproject4 {
                     bakiye += tutar;
                     System.out.println("Yeni bakiyeniz = "+bakiye);
                     System.out.println("Yapmak istediğiniz başka bir işlem var mı ? (y-n)");
-                     scan.nextLine();
+                    scan.nextLine();//bunu neden yaptık?
                     kontrol3 = scan.nextLine();
                    
                     
