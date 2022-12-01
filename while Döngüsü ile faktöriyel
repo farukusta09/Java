@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+     
+      int faktoriyel = 1;
+     
+      System.out.println("faktoriyelini bulmak istediğiniz sayıyı giriniz...");
+     
+      int sayi = scan.nextInt();
+      int a = sayi;
+      while (sayi>0){
+      
+      faktoriyel*=sayi;
+      sayi--;
+      }
+      
+      System.out.println(a+" sayısının faktoriyel degeri = "+faktoriyel);
+      
+    }
+}
